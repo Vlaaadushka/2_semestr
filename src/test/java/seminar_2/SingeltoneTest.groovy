@@ -13,7 +13,7 @@ public class SingeltoneTest {
 
     @Test
     public void getSingleTon()  {
-        int nTreads = 100;
+        int nTreads = 10000;
 
         ConcurrentSkipListSet<Integer> listSet = new ConcurrentSkipListSet<>();
         CountDownLatch startCdl = new CountDownLatch(nTreads);
@@ -39,6 +39,5 @@ public class SingeltoneTest {
 
         assertEquals(1, listSet.size());
     }
-    }
-    
 }
+    
