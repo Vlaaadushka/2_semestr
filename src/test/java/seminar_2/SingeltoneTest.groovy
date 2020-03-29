@@ -13,14 +13,14 @@ public class SingeltoneTest {
 
     @Test
     public void getSingleTon()  {
-        int nTreads = 10000;
+        int Flow = 100000;
 
         ConcurrentSkipListSet<Integer> listSet = new ConcurrentSkipListSet<>();
-        CountDownLatch startCdl = new CountDownLatch(nTreads);
-        CountDownLatch endCdl = new CountDownLatch(nTreads);
-        Executor executor = Executors.newFixedThreadPool(nTreads);
+        CountDownLatch startCdl = new CountDownLatch(Flow);
+        CountDownLatch endCdl = new CountDownLatch(Flow);
+        Executor executor = Executors.newFixedThreadPool(Flow);
 
-        for (int i = 0; i < nTreads; i++) {
+        for (int i = 0; i < Flow; i++) {
             executor.execute(() -> {
                 startCdl.countDown();
                 try {
