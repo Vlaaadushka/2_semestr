@@ -1,3 +1,5 @@
+package seninar_1;
+
 public enum TypeAnimal {
     BIRD,
     FISH,

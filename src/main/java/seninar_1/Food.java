@@ -1,10 +1,12 @@
+package seninar_1;
+
 import java.io.Serializable;
 import java.util.Objects;
 
 public class Food implements Serializable {
     private final String name;
     private final float mass;
-    public Food(String name,float mass){
+    public Food(String name, float mass){
         this.name=name;
         this.mass=mass;
     }

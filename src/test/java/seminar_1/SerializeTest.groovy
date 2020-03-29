@@ -1,7 +1,10 @@
-import org.junit.Test;
+package seminar_1
 
+import org.junit.Test
+import seninar_1.Animal
+import seninar_1.Food
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class SerializeTest {
     List<Animal> listAnimals = Arrays.asList(
