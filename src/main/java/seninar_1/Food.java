@@ -7,8 +7,8 @@ public class Food implements Serializable {
     private final String name;
     private final float mass;
     public Food(String name, float mass){
-        this.name=name;
-        this.mass=mass;
+        this.name = name;
+        this.mass = mass;
     }
 
     public String getName() {

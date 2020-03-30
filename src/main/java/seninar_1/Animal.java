@@ -12,10 +12,10 @@ public class Animal implements Serializable {
     private final int age;
 
     public Animal(TypeAnimal type, String name, int age, List<Food> listFood){
-        this.type=type;
-        this.name=name;
-        this.age=age;
-        this.listFood=listFood;
+        this.type = type;
+        this.name = name;
+        this.age = age;
+        this.listFood = listFood;
     }
 
     public Animal(List<Food> listFood, TypeAnimal type, String name, int age) {
